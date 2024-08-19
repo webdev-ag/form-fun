@@ -1,0 +1,14 @@
+:root {
+    --c-red: rgb(240 62 62);
+    --c-green: rgb(62 240 62);
+    --c-blue: rgb(62 62 240);
+    --c-yellow: rgb(240 240 62);
+
+    --c-grey-dark: rgb(92 92 92);
+    --c-grey-med: rgb(142 142 142);
+    --c-grey-light: rgb(222 222 222);
+
+    --c-white: rgb(254 254 254);
+    --c-white-50: rgb(254 254 254 / .5);
+    --c-black: rgb(24 24 64);
+}

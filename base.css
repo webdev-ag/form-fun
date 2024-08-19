@@ -1,0 +1,128 @@
+html, body {
+    height: 100%;
+    min-height: 900px;
+    min-width: 1200px;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+fieldset {
+    margin: 2rem;
+    border: 2px solid var(--c-grey-dark);
+    border-radius: .5rem;
+    height: 360px;
+    width: 600px;
+}
+
+legend {
+    border-left: 2px solid var(--c-grey-dark);
+    border-right: 2px solid var(--c-grey-dark);
+    padding: 0 0.5rem;
+    height: .75rem;
+    line-height: .8rem;
+    overflow: visible;
+}
+
+button {
+    background-color: var(--c-white);
+    appearance: none;
+    border: 2px solid var(--c-blue);
+    padding: .75rem 1rem;
+    border-radius: .5rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem var(--c-grey-med);
+}
+
+button:active {
+    border: 2px solid var(--c-red);
+    box-shadow: 0.125rem 0.125rem 0.25rem var(--c-grey-dark);
+}
+
+input {
+    appearance: none;
+    border-radius: .5rem;
+    padding: 0.25rem 0.5rem;
+    box-shadow: 0.125rem 0.125rem 0.25rem var(--c-grey-dark);
+    background-color: var(--c-white);
+}
+
+input[type=text] {
+    border-radius: .5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.form-group {
+    border-radius: .5rem;
+    background-color: var(--c-white-50);
+    width: 620px;
+    max-width: 420px;
+    padding: .5rem 1rem;
+}
+
+.form-group > label {
+    display: inline-block;
+    width: 120px;
+}
+
+.form-group > input {
+    width: 260px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-color: var(--c-white);
+    color: var(--c-black);
+}
+
+main {
+    padding: 1rem 2rem;
+}
+
+header, footer {
+    padding: 2rem 3rem;
+    background-color: var(--c-grey-light);
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+#root {
+    min-height: 640px;
+    min-width: 820px;
+    border: 2px solid var(--c-green);
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+/*  --- form fun starts here --- */
+
+.move-me {
+    position: absolute;
+    transition: top 300ms, left 300ms;
+    z-index: 100;
+}
+.gameboard {
+    background-color: var(--c-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 3rem);
+    height: calc(100% - 2rem);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+    border-radius: 0.5rem;
+    border: 2px solid var(--c-green);
+}
+
+.gameboard > p {
+    background-color: var(--c-white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
