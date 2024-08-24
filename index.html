@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular Beispiel</title>
+
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+</head>
+<body>
+    <header>
+        <h1>Starte das Spiel!</h1>
+        <p>Gib dazu einfach die Daten ein und klicke auf "Spielen"</p>
+    </header>
+
+    <main id="root">
+        <p>Bitte gib Deine Daten hier ein:</p>
+        <fieldset>
+            <legend>Spielerdaten</legend>
+
+            <div class="move-me form-group form-group1" style="top: 140px;left: 80px;">
+                <label for="gamertag">Gamer-Tag</label>
+                <input type="text" id="gamertag" />
+            </div>
+
+            <div class="move-me form-group form-group2" style="top: 225px;left: 80px;">
+                <label for="email">Email-Adresse</label>
+                <input type="email" id="email" />
+            </div>
+
+
+            <div class="move-me form-group form-group3" style="top: 310px;left: 80px;">
+                <label for="password">Passwort</label>
+                <input type="password" id="password" />
+            </div>
+
+            <button class="move-me btn-submit" type="button" style="top: 360px;left: 560px;">Spielen</button>
+        </fieldset>
+        <div class="gameboard">
+            <p>
+                Das Game startet hier<br/>
+                sobald Du Deine Daten<br/>
+                eingegeben hast
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        Dieses Spiel wurde für die AG Webentwicklung der Schillerschule im Jahr 2024 entwickelt!
+    </footer>
+
+    <!-- scripts -->
+    <script src="./script/mover.js"></script>
+
+    <script>
+        initFun();
+    </script>
+</body>
+</html>
