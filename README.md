@@ -4,9 +4,9 @@
 
 Ein ganz einfaches Repo mit einer inde.html Datei, um in der WebDev AG der Schillerschule Offenbach zu zeigen, was man HTML/CSS/JS tun kann.
 
-### Public Webpage
+### Öffentliche Website
 
-[The Form Fun Repo is public on Github Pages](https://webdev-ag.github.io/form-fun/)
+[Das Form Fun Repo ist über die Github Pages öffentlich erreichbar](https://webdev-ag.github.io/form-fun/)
 
 ## english version
 
