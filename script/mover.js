@@ -18,16 +18,31 @@ function initFun() {
 }
 
 function attachHandler(el) {
+    const githubLink = document.querySelector('#to-github');
     const width = el.offsetWidth;
     const height = el.offsetHeight;
 
-    function onMouseOver(ev) {
+    /**
+     * @param {Event} ev
+     */
+    function moveElement(ev) {
         const newPos = randomPositionInField(width, height);
         el.style.top = `${randomIntBetween(0, maxHeight - el.offsetHeight)}px`;
         el.style.left = `${randomIntBetween(0, maxWidth - el.offsetWidth)}px`;
     }
 
-    el.addEventListener('mouseover', onMouseOver);
+    /**
+     * @param {Event} ev
+     */
+    function onFocus(ev) {
+        ev.preventDefault();
+        githubLink.focus();
+        moveElement();
+    }
+
+    el.addEventListener('mouseover', moveElement);
+    el.addEventListener('touch', moveElement);
+    el.addEventListener('focus', onFocus);
 }
 
 function randomPositionInField(myWidth, myHeight) {
