@@ -40,9 +40,12 @@ function attachHandler(el) {
         moveElement();
     }
 
-    el.addEventListener('mouseover', moveElement);
-    el.addEventListener('touch', moveElement);
-    el.addEventListener('focus', onFocus);
+    window.setTimeout(()=> {
+        el.addEventListener('mouseover', moveElement);
+        el.addEventListener('touch', moveElement);
+        el.addEventListener('focusin', onFocus);
+    }, 500)
+
 }
 
 function randomPositionInField(myWidth, myHeight) {
