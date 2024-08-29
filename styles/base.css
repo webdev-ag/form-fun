@@ -91,6 +91,18 @@ header, footer {
     text-align: center;
 }
 
+header > * {
+    width: max-content;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 #root {
     min-height: 640px;
     min-width: 820px;
